@@ -2,12 +2,17 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "short-text" .Params.blurb}}
+<div class="bg-light-green">
+  <ul class="center mw7 flex-ns flex-wrap mhn1-ns pt3 pb3">
+      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+          <div class="w-50-ns ph1-ns flex pa1">
+            {{ .Render "li"}}
+          </div>
+      {{ end }}
+  </ul>
+  {{ partial "pagination" . }}
+</div>
 
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
+<!-- {{ partial "blog" . }} -->
 
 {{ end }}
