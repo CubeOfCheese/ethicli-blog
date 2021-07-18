@@ -1,0 +1,9 @@
+.nav-button {
+  text-decoration: none;
+  transition: var(--hover-transition);
+}
+
+.nav-button:hover   {
+  transition: color .15s ease-in;
+  background-color: var(--dark-blue-hover);
+}

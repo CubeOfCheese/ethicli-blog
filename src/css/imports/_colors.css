@@ -68,6 +68,14 @@
   background-color: var(--grey-4);
 }
 
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-dark-blue-hover {
+  background-color: var(--dark-blue-hover);
+}
+
 .bg-cream {
   background-color: var(--cream);
 }
@@ -78,6 +86,10 @@
 
 .bg-leaf-green {
   background-color: var(--leaf-green);
+}
+
+.bg-transparent {
+  background-color: var(--transparent);
 }
 
 .bg-fix-primary {
