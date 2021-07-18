@@ -3,7 +3,7 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 <div class="bg-light-green">
-  <ul class="center mw6 flex-ns flex-wrap mhn1-ns pt3 pb3">
+  <ul class="center mw7 flex-ns flex-wrap mhn1-ns pt3 pb3">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
           <div class="w-50-ns ph1-ns flex pa1">
             {{ .Render "li"}}
