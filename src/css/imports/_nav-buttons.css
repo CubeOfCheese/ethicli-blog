@@ -5,5 +5,5 @@
 
 .nav-button:hover   {
   transition: color .15s ease-in;
-  background-color: var(--dark-blue-hover);
+  opacity: 60%;
 }
