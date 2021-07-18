@@ -68,6 +68,14 @@
   background-color: var(--grey-4);
 }
 
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
 .bg-leaf-green {
   background-color: var(--leaf-green);
 }
